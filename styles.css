@@ -1,0 +1,55 @@
+body {
+    padding: 25px;
+    background-color: red;
+}
+
+.tab-pane {
+    padding: 10px;
+}
+#crust {
+    background-color: white;
+}
+
+#delivery {
+    background-color: white;
+
+}
+
+#confirm {
+    background-color: white;
+}
+.blankRow{
+    height: 10px;
+}
+#chryslerHero{
+    height: 300px;
+    background-image: url("img/chryslerhero.jpg") ;
+    background-size: 100%    100%;
+    margin-bottom: 1em;
+}
+#chryslerHero #mcDisclaimer {
+    visibility: hidden;
+    width: 250px;
+    background-color: #1b881b;;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size: 11pt;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+#chryslerHero:hover #mcDisclaimer {
+    visibility: visible;
+}
+.nav-tabs > li > a{
+    color: green !important;
+    font-weight: bold;
+}
+.nav-tabs > li > a:hover{
+    background-color: green !important;
+    border: medium none;
+    border-radius: 0;
+    color:white !important;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Merry Chrysler</title>
+    <!-- Bootstrap styles first -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Our styles -->
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body id="page">
+<div class="container">
+    <div id="chryslerHero"><span id="mcDisclaimer">Merry Chrysler</span></div>
+    <h1>Will's Wish List</h1>
+    <nav>
+        <ul id="tabs" class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#games">Games</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#delivery" id="deliveryTab">Delivery Info</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#confirm" id="confirmTab">Order Confirmation</a>
+            </li>
+        </ul>
+    </nav>
+    <!--The first tab. This one accepts pizza-related information from the user-->
+    <div class="tab-content">
+
+        <div id="games" class="tab-pane active">
+            <h2>I'm curious about these games</h2><br><br>
+        </div>
+        <!--The second tab. Accepts information pertinent to delivering a pizza: Name, Address, Phone number.-->
+        <div id="misc" class="tab-pane">
+            <h2>Enter your Delivery Info</h2><br>
+            <form id="deliveryDetails">
+                <label for="firstName">First Name</label>
+                <input name="firstName" id="firstName" type="text" class="form-control" required="required"><br>
+                <label for="lastName">Last Name</label>
+                <input name="lastName" id="lastName" type="text" class="form-control" required="required"><br>
+                <label for="addressLineOne">Address Line One</label>
+                <input name="addressLineOne" id="addressLineOne" type="text" class="form-control" required="required"><br>
+                <label for="addressLineTwo">Address Line Two</label>
+                <input name="addressLineTwo" id="addressLineTwo" type="text" class="form-control"><br>
+                <label for="city">City</label>
+                <input name="city" id="city" type="text" class="form-control" required="required"><br>
+                <label for="postalCode">Postal Code</label>
+                <input name="postalCode" id="postalCode" type="text" class="form-control" required="required"><br>
+                <label for="phoneNumber">Phone Number</label>
+                <input name="phoneNumber" id="phoneNumber" type="tel" class="form-control" required="required"><br>
+                <button id="infoSubmit">Submit</button>
+            </form>
+
+            <p id="endContactDetails">Thanks for the info, meet you on the order confirmation tab!</p>
+        </div>
+        <!--The third tab. Parrots back all the info entered by the user. This is where the scope of the assignment ends, so there's nothing to click once you get here.-->
+        <div id="confirm" class="tab-pane">
+            <h2>Thanks for ordering a pizza. Here's what you selected</h2>
+            <h4>Your Pizza's Info</h4>
+            <table>
+                <tr>
+                    <th>Detail</th>
+                    <th id="costAlign">Cost</th>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="sizeConfirm"></span>
+                    </td>
+                    <td id="sizeAlign">
+                        <span id="sizePrice"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="crustConfirm"></span>
+                    </td>
+                    <td id="crustAlign">
+                        <span id="crustPrice"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="meatsConfirm"></span>
+                    </td>
+                    <td id="meatsAlign">
+                        <span id="meatsPrice"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="veggiesConfirm"></span>
+                    </td>
+                    <td id="veggiesAlign">
+                        <span id="veggiesPrice"></span>
+                    </td>
+                </tr>
+                <tr class="blankRow">
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <td>Subtotal:</td>
+                    <td id="subtotalAlign"><span id="subtotal"></span></td>
+                </tr>
+                <tr>
+                    <td>Tax:</td>
+                    <td id="taxAlign"><span id="taxAmount"></span></td>
+                </tr>
+                <tr>
+                    <td>
+                        Delivery Fee:
+                    </td>
+                    <td id="deliveryAlign">
+                        2.00
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Total:
+                    </td>
+                    <td id="totalAlign">
+                        <span id="total"></span>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <div id="customerInfo">
+                <h4>Your Info</h4>
+                <span id="firstAndLast"></span><br>
+                <span id="address"></span><br>
+                <span id="cityAndZip"></span><br>
+                <span id="phone"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery first -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<!-- Popper and Bootstrap second -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Our code last -->
+<script src="sted.js"></script>
+
+</body>
+
+</html>
