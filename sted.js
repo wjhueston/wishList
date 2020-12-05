@@ -9,5 +9,13 @@ $(document).ready(
             chryslerhero.style.top = (y + 20) + 'px';
             chryslerhero.style.left = (x + 20) + 'px';
         };
+
+        //Events
+        $("#tabs a").click(showTab);
+        //Functions
+        function showTab(event) {
+            event.preventDefault();
+            $(this).tab("show");
+        }
     }
 )

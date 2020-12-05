@@ -21,119 +21,79 @@
                 <a class="nav-link active" href="#games">Games</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#delivery" id="deliveryTab">Delivery Info</a>
+                <a class="nav-link" href="#gameAdjacent" id="confirmTab">Game Adjacent</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#confirm" id="confirmTab">Order Confirmation</a>
+                <a class="nav-link" href="#misc" id="deliveryTab">Misc</a>
             </li>
         </ul>
     </nav>
-    <!--The first tab. This one accepts pizza-related information from the user-->
     <div class="tab-content">
-
         <div id="games" class="tab-pane active">
-            <h2>I'm curious about these games</h2><br><br>
-        </div>
-        <!--The second tab. Accepts information pertinent to delivering a pizza: Name, Address, Phone number.-->
-        <div id="misc" class="tab-pane">
-            <h2>Enter your Delivery Info</h2><br>
-            <form id="deliveryDetails">
-                <label for="firstName">First Name</label>
-                <input name="firstName" id="firstName" type="text" class="form-control" required="required"><br>
-                <label for="lastName">Last Name</label>
-                <input name="lastName" id="lastName" type="text" class="form-control" required="required"><br>
-                <label for="addressLineOne">Address Line One</label>
-                <input name="addressLineOne" id="addressLineOne" type="text" class="form-control" required="required"><br>
-                <label for="addressLineTwo">Address Line Two</label>
-                <input name="addressLineTwo" id="addressLineTwo" type="text" class="form-control"><br>
-                <label for="city">City</label>
-                <input name="city" id="city" type="text" class="form-control" required="required"><br>
-                <label for="postalCode">Postal Code</label>
-                <input name="postalCode" id="postalCode" type="text" class="form-control" required="required"><br>
-                <label for="phoneNumber">Phone Number</label>
-                <input name="phoneNumber" id="phoneNumber" type="tel" class="form-control" required="required"><br>
-                <button id="infoSubmit">Submit</button>
-            </form>
-
-            <p id="endContactDetails">Thanks for the info, meet you on the order confirmation tab!</p>
-        </div>
-        <!--The third tab. Parrots back all the info entered by the user. This is where the scope of the assignment ends, so there's nothing to click once you get here.-->
-        <div id="confirm" class="tab-pane">
-            <h2>Thanks for ordering a pizza. Here's what you selected</h2>
-            <h4>Your Pizza's Info</h4>
-            <table>
-                <tr>
-                    <th>Detail</th>
-                    <th id="costAlign">Cost</th>
-                </tr>
-                <tr>
-                    <td>
-                        <span id="sizeConfirm"></span>
-                    </td>
-                    <td id="sizeAlign">
-                        <span id="sizePrice"></span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span id="crustConfirm"></span>
-                    </td>
-                    <td id="crustAlign">
-                        <span id="crustPrice"></span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span id="meatsConfirm"></span>
-                    </td>
-                    <td id="meatsAlign">
-                        <span id="meatsPrice"></span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span id="veggiesConfirm"></span>
-                    </td>
-                    <td id="veggiesAlign">
-                        <span id="veggiesPrice"></span>
-                    </td>
-                </tr>
-                <tr class="blankRow">
-                    <td colspan="2"></td>
-                </tr>
-                <tr>
-                    <td>Subtotal:</td>
-                    <td id="subtotalAlign"><span id="subtotal"></span></td>
-                </tr>
-                <tr>
-                    <td>Tax:</td>
-                    <td id="taxAlign"><span id="taxAmount"></span></td>
-                </tr>
-                <tr>
-                    <td>
-                        Delivery Fee:
-                    </td>
-                    <td id="deliveryAlign">
-                        2.00
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Total:
-                    </td>
-                    <td id="totalAlign">
-                        <span id="total"></span>
-                    </td>
-                </tr>
-            </table>
-            <br>
-            <div id="customerInfo">
-                <h4>Your Info</h4>
-                <span id="firstAndLast"></span><br>
-                <span id="address"></span><br>
-                <span id="cityAndZip"></span><br>
-                <span id="phone"></span>
+            <h2>So there are two ways I play games</h2>
+            <ul id="gameTabs" class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#originGames">Origin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#steamGames">Steam</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="originGames" class="nav-pane active">
+                    <h4>The Origin Store</h4>
+                    <p>
+                        So some of my favorite games of all time are made and maintained by a group called Bioware.
+                        They're responsible for the Mass Effect and Knights of the Old Republic game series. Bioware offers their games
+                        through a service called Origin, which is a program that downloads, stores, and organizes games. If you're
+                        curious about either of these games, the easiest way to make it happen is through Ian's boyfriend
+                        Zach, who has an account with Origin.
+                    </p>
+                    <table>
+                        <tr>
+                            <th style="text-align:center">Anthem</th>
+                            <th style="text-align:center">Mass Effect: Andromeda</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://www.origin.com/usa/en-us/store/anthem/anthem">
+                                    <div id="anthemHover">
+                                        <span id="anthemText">
+                                            "Yeah, but like, why wouldn't you just take a commercial flight?"
+                                        </span>
+                                    </div>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="https://www.origin.com/usa/en-us/store/mass-effect/mass-effect-andromeda">
+                                    <div id="meaHover">
+                                        <span id="meaText">
+                                            "What do you mean 'it's a nonsense name'? Mass Effect fields are--wait, come back!"
+                                        </span>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
+        </div>
+        <div id="gameAdjacent" class="tab-pane">
+            <h2>This stuff is kinda hobby-adjacent</h2>
+            <ul>
+                <li>Desk and Chair</li>
+                <li>Destiny Silver</li>
+            </ul>
+        </div>
+        <div id="misc" class="tab-pane">
+            <h2>This is where I put items that don't really have a category</h2>
+            <ul>
+                <li>
+                    Something Liz, Ian, and Lane will want to play once a week
+                </li>
+                <li>Hair Clippers</li>
+                <li>LL. Bean Stuff</li>
+            </ul>
         </div>
     </div>
 </div>
@@ -145,7 +105,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <!-- Our code last -->
 <script src="sted.js"></script>
-
 </body>
 
 </html>

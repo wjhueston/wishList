@@ -6,16 +6,16 @@ body {
 .tab-pane {
     padding: 10px;
 }
-#crust {
+#games {
     background-color: white;
 }
 
-#delivery {
+#misc {
     background-color: white;
 
 }
 
-#confirm {
+#gameAdjacent {
     background-color: white;
 }
 .blankRow{
@@ -44,7 +44,7 @@ body {
     visibility: visible;
 }
 .nav-tabs > li > a{
-    color: green !important;
+    color: white;
     font-weight: bold;
 }
 .nav-tabs > li > a:hover{
@@ -52,4 +52,68 @@ body {
     border: medium none;
     border-radius: 0;
     color:white !important;
+}
+#meaInfo{
+    height: 411px;
+    width: 387px;
+    border: 1px black solid;
+
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+#anthemHover{
+    background-image: url("img/Anthem.png");
+    height: 411px;
+    width: 387px;
+    border: 1px black solid;
+}
+#anthemHover #anthemText {
+    visibility: hidden;
+    width: 250px;
+    background-color: #1b881b;;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size: 11pt;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 35.75%;
+    margin-left: -60px;
+}
+#anthemHover:hover #anthemText {
+    visibility: visible;
+}
+#meaHover{
+    background-image: url("img/mea.png");
+    height: 411px;
+    width: 387px;
+    border: 1px black solid;
+}
+#meaHover #meaText {
+    visibility: hidden;
+    width: 250px;
+    background-color: #1b881b;;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size: 11pt;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 57.25%;
+    margin-left: -60px;
+}
+#meaHover:hover #meaText {
+    visibility: visible;
+}
+td
+{
+    padding:0 15px;
 }
